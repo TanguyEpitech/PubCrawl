@@ -54,7 +54,7 @@
 
 
                         <x-button class=" py-3 my-3 ml-4">
-                            {{ __('Modifier') }}
+                            {{ __('Ajouter') }}
                         </x-button>
                     </form>
                 </div>

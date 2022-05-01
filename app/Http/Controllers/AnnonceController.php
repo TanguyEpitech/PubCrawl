@@ -35,12 +35,11 @@ class AnnonceController extends Controller
         ]);
 
         $path = Storage::disk('public')->put("imageAnnonce", $request->photographie);
-echo "ldksfj";
         $article = new Annonce();
         $article->titre = $request->titre;
         $article->description = $request->description;
         $article->user_id = auth()->id();
-        $article->photographie =  $path;
+        $article->photographie = $path;
         $article->prix = $request->prix;
         $article->save();
 

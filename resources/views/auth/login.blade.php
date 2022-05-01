@@ -3,8 +3,6 @@
 <div class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 30px;">
 
     <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-    <h3 style="margin-right:auto">Le bon Ketru</h3>
-
 
 </div>
 

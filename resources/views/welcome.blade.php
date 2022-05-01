@@ -105,7 +105,7 @@ margin-top: ;
              <div class="contain " >
 
              <h1 class="text-center bannertitle " alt="...">Pub Crawl</h1>
-             <h6 class="text-center text-muted " alt="...">L'appli rapide pour les soirées</h6>
+             <h6 class="text-center text-white " alt="...">L'appli rapide pour les soirées</h6>
              </div>
          </div>
         </div>

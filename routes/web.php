@@ -35,4 +35,13 @@ Route::get('/ajouter', [AnnonceController::class, 'index'])->middleware(['auth',
 
 Route::post('/ajouter', [AnnonceController::class, 'create'])->middleware(['auth',"verified"])->name("ajouter");
 
+
+// les bars
+
+Route::get('/registerForPro', [\App\Http\Controllers\adminController::class, "index"])->name("register_pro");
+Route::post('/registerForPro', [\App\Http\Controllers\adminController::class, "create"])->name("register_pro");
+
+
+
+
 require __DIR__.'/auth.php';
