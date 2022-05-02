@@ -15,8 +15,8 @@
 
     @foreach($all as $annonce)
 
-    <div class="card shadow-md m-5 p-5 col-2" style="width: 18rem;">
-        <img class="card-img-top" src="storage/{{$annonce->photographie}}" alt="Card image cap">
+    <div  class="card shadow-md m-5 p-5 col-2" style="width: 18rem;">
+        <img class="card-img-top" src="/storage/{{$annonce->photographie}}" alt="Card image cap">
         <div class="h3 text-center"> {{$annonce->titre}} </div>
         <div class="card-body">
             <p class="card-text"> {{$annonce->description}}  </p>

@@ -6,8 +6,10 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use App\Models\Role;
+
 class adminController extends Controller
 {
     /**
@@ -41,17 +43,20 @@ class adminController extends Controller
         ]);
 
 
+        $path = "sldjfmlsdkf";
 
         $user = new User();
         $user->name = $request->name;
         $user->email = $request->email;
         $user->password = $request->password;
         $user->siret = $request->siret;
-        $user->carte_identite = $request->carte_identite;
+        $user->carteIdentite = $path;
         $user->save();
-        $user->isAn("admin");
+        $user->attachRole("administrator");
 
-      return Auth::login($user);
+        Auth::login($user);
+
+        return redirect("home")->with("succes", "you are connected");
     }
 
     /**

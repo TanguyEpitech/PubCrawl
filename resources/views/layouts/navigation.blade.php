@@ -19,9 +19,14 @@
                     <x-nav-link :href="route('home')" :active="request()->routeIs('home')">
                         {{ __('home') }}
                     </x-nav-link>
+
+                     @role('administrator')
+
                     <x-nav-link :href="route('ajouter')" :active="request()->routeIs('ajouter')">
                         {{ __('Publier') }}
                     </x-nav-link>
+
+                    @endrole
                         <x-nav-link :href="route('getAnnonceController')" :active="request()->routeIs('getAnnonceController')">
                         {{ __('Les annonces') }}
                     </x-nav-link>

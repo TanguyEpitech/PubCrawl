@@ -23,7 +23,7 @@
 
 
                             <div style="max-height: 300px; max-width: 300px"  class="card shadow-md m-5 p-5 col" style="width: 18rem;">
-                                <img class="card-img-top" src="/storage/{{$data->photographie}}" alt="Card image cap">
+                                <img class="card-img-top" src="/storage/{{$data->photographie }}" alt="Card image cap">
                                 <br>
                                 <div class="h5 text-center"> {{$data->titre}} </div>
                                 <div class="card-body">
